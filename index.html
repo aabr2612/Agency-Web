@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XCELL Digital Solutions</title>
+    <title>XCELL Digital Services</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/styles/styles.css">
 </head>
@@ -14,8 +14,8 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="Assets/images/XCELL.svg" alt="XCELL Digital Solutions">
-                <h5 class="ms-3 mb-0">XCELL Digital Solutions</h5>
+                <img src="Assets/images/XCELL.svg" alt="XCELL Digital Services">
+                <h5 class="ms-3 mb-0">XCELL Digital Services</h5>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +75,7 @@
         <div class="hero-content">
             <div class="hero-box">
                 <h1><span class="highlight">XCELL</span></h1>
-                <p>At XCELL Digital Solutions, we provide comprehensive administrative support services tailored to
+                <p>At XCELL Digital Services, we provide comprehensive administrative support services tailored to
                     streamline your operations and enhance productivity.</p>
                 <a href="#contact" class="btn btn-primary">Get in Touch</a>
             </div>
@@ -87,7 +87,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h2 class="section-title">XCELL</h2>
-                    <p class="about-text">At XCELL Digital Solutions, we pride ourselves on being one of the leading
+                    <p class="about-text">At XCELL Digital Services, we pride ourselves on being one of the leading
                         providers of comprehensive administrative support services. We specialize in delivering tailored
                         solutions designed to streamline your business operations and enhance productivity.</p>
                 </div>
@@ -145,7 +145,7 @@
                 <div class="col-12 text-center mb-4">
                     <h2 class="section-title">Our Services</h2>
                     <p class="section-description">
-                        At XCELL Digital Solutions, we pride ourselves on providing a wide range of high-quality
+                        At XCELL Digital Services, we pride ourselves on providing a wide range of high-quality
                         services designed to meet all your administrative needs. Explore our offerings below to see how
                         we can help streamline your operations and enhance your productivity.
                     </p>
@@ -375,7 +375,7 @@
             <div class="row">
                 <!-- Left Column: Existing Footer Content -->
                 <div class="col-lg-6 footer-left">
-                    <h3 class="footer-title">XCELL Digital Solutions</h3>
+                    <h3 class="footer-title">XCELL Digital Services</h3>
                     <p class="footer-subtitle">Your Ultimate Administrative Support Partner</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/yourprofile" class="social-icon" target="_blank" title="Facebook">
@@ -428,71 +428,10 @@
     
             <!-- Privacy Policy and Rights Reserved -->
             <div class="text-center mt-4">
-                <p class="footer-credit">&copy; 2024 XCELL Digital Solutions. All rights reserved.</p>
+                <p class="footer-credit">&copy; 2024 XCELL Digital Services. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <script>
-        // Auto horizontal scroll behavior
-        const projectCardsWrapper = document.querySelector('.project-cards-wrapper');
-        const projectCards = document.querySelector('.project-cards');
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-
-        projectCardsWrapper.addEventListener('mousedown', (e) => {
-            isDown = true;
-            projectCardsWrapper.classList.add('active');
-            startX = e.pageX - projectCardsWrapper.offsetLeft;
-            scrollLeft = projectCardsWrapper.scrollLeft;
-        });
-        projectCardsWrapper.addEventListener('mouseleave', () => {
-            isDown = false;
-            projectCardsWrapper.classList.remove('active');
-        });
-        projectCardsWrapper.addEventListener('mouseup', () => {
-            isDown = false;
-            projectCardsWrapper.classList.remove('active');
-        });
-        projectCardsWrapper.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - projectCardsWrapper.offsetLeft;
-            const walk = (x - startX) * 3; //scroll-fast
-            projectCardsWrapper.scrollLeft = scrollLeft - walk;
-        });
-
-
-
-        document.getElementById('contactForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            // Get form values
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const email = document.getElementById('email').value;
-            const info = document.getElementById('info').value;
-
-            // Create mailto link
-            const mailtoLink = `mailto:Sifra@xcelldigitalservices.com?subject=Contact from ${name}&body=Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AMessage: ${info}`;
-
-            // Open mailto link
-            window.location.href = mailtoLink;
-        });
-
-
-    </script>
 </body>
 
 </html>

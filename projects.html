@@ -13,7 +13,7 @@
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="Assets/images/XCELL.svg" alt="XCELL Digital Solutions">
-                <h5 class="ms-3 mb-0">XCELL Digital Solutions</h5>
+                <h5 class="ms-3 mb-0">XCELL Digital Services</h5>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,7 +143,7 @@
             <div class="row">
                 <!-- Left Column: Existing Footer Content -->
                 <div class="col-lg-6 footer-left">
-                    <h3 class="footer-title">XCELL Digital Solutions</h3>
+                    <h3 class="footer-title">XCELL Digital Services</h3>
                     <p class="footer-subtitle">Your Ultimate Administrative Support Partner</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/yourprofile" class="social-icon" target="_blank" title="Facebook">
@@ -196,67 +196,10 @@
     
             <!-- Privacy Policy and Rights Reserved -->
             <div class="text-center mt-4">
-                <p class="footer-credit">&copy; 2024 XCELL Digital Solutions. All rights reserved.</p>
+                <p class="footer-credit">&copy; 2024 XCELL Digital Services. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-<script>
-    // Auto horizontal scroll behavior
-    const projectCardsWrapper = document.querySelector('.project-cards-wrapper');
-    const projectCards = document.querySelector('.project-cards');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    projectCardsWrapper.addEventListener('mousedown', (e) => {
-        isDown = true;
-        projectCardsWrapper.classList.add('active');
-        startX = e.pageX - projectCardsWrapper.offsetLeft;
-        scrollLeft = projectCardsWrapper.scrollLeft;
-    });
-    projectCardsWrapper.addEventListener('mouseleave', () => {
-        isDown = false;
-        projectCardsWrapper.classList.remove('active');
-    });
-    projectCardsWrapper.addEventListener('mouseup', () => {
-        isDown = false;
-        projectCardsWrapper.classList.remove('active');
-    });
-    projectCardsWrapper.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - projectCardsWrapper.offsetLeft;
-        const walk = (x - startX) * 3; //scroll-fast
-        projectCardsWrapper.scrollLeft = scrollLeft - walk;
-    });
-
-
-
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        // Get form values
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const email = document.getElementById('email').value;
-        const info = document.getElementById('info').value;
-
-        // Create mailto link
-        const mailtoLink = `mailto:Sifra@xcelldigitalservices.com?subject=Contact from ${name}&body=Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AMessage: ${info}`;
-
-        // Open mailto link
-        window.location.href = mailtoLink;
-    });
-
-
-</script>
     
 </body>
 </html>

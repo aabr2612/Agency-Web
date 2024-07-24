@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.87);
+    background-color: rgba(0, 0, 0, 0.692);
     color: var(--text-color);
     margin: 0;
 }
@@ -662,4 +662,36 @@ body {
     margin-top: 1rem;
     font-size: 1rem;
     color: var(--text-color);
+}
+.pricing-section {
+    background-color: var(--primary-color);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.pricing-section h1,
+.pricing-section h2,
+.pricing-section h3,
+.pricing-section h4,
+.pricing-section h5 {
+    color: var(--secondary-color);
+}
+
+.pricing-section p,
+.pricing-section ul li {
+    color: var(--text-color);
+}
+
+.pricing-section .list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+.pricing-section .btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.pricing-section .btn-primary:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
 }
