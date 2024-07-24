@@ -1,10 +1,11 @@
 /* Root Variables */
 :root {
     --primary-color: #ffffff; /* White background */
-    --secondary-color: #3563E9; /* Blue text and highlights */
+    --secondary-color: black; /* Blue text and highlights */
     --background-color: #f0f0f0; /* Slightly off-white background */
     --text-color: #000000; /* Black text */
-    --accent-color: #3563E9; /* Blue for accents */
+    --accent-color: #f8b682; /* Blue for accents */
+    --hover-color: #a6724b;
 }
 
 /* General Styling */
@@ -20,7 +21,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: var(--primary-color);
+    background-color: #f8b682;
     position: fixed; /* Fix the navbar to the top */
     width: 100%;
     z-index: 1000; /* Ensure it stays on top of other content */
@@ -117,7 +118,7 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #004bb5;
+    background-color: var(--hover-color);
     box-shadow: 0 0 8px var(--accent-color), 0 0 16px var(--accent-color);
 }
 
@@ -350,13 +351,14 @@ body {
 }
 
 .btn-primary {
+    color: #000000;
     background-color: var(--accent-color);
     border: none;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #004bb5;
+    background-color: var(--hover-color);
     box-shadow: 0 0 8px var(--accent-color), 0 0 16px var(--accent-color);
 }
 
@@ -452,13 +454,13 @@ body {
 
 /* Blogs section *//* Blog Section Styles */
 .blogs-section {
-    background-color: #ffffff;
+    background-color: var(--background-color);
     padding: 2rem 0;
 }
 
 .blogs-section .section-title {
     font-size: 2rem;
-    color: #3563E9;
+    color:var(--accent-color);
     margin-bottom: 1rem;
 }
 
@@ -493,7 +495,7 @@ body {
 
 .blogs-section .card-title {
     font-size: 1.25rem;
-    color: #3563E9;
+    color: var(--secondary-color);
     margin-bottom: 0.5rem;
 }
 
@@ -503,8 +505,8 @@ body {
 }
 
 .blogs-section .btn-primary {
-    background-color: #3563E9;
-    border-color: #3563E9;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
@@ -515,8 +517,8 @@ body {
 }
 
 .blogs-section .btn-primary:hover {
-    background-color: #004bb5;
-    border-color: #004bb5;
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -576,7 +578,7 @@ body {
 }
 
 .contact-us .btn-primary:hover {
-    background-color: #004bb5;
+    background-color: var(--hover-color);
     box-shadow: 0 0 8px var(--accent-color), 0 0 16px var(--accent-color);
 }
 
