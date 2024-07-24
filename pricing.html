@@ -66,78 +66,56 @@
             </div>
         </div>
     </nav>
-    <section id="projects" class="projects-section py-5 mt-5">
+
+    <section id="contactus" class="contact-us py-5 mt-5">
         <div class="container">
-            <div class="row align-items-center mb-5">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="mb-4 display-4 text-center">
+                        <strong>Contact Us</strong>
+                    </h1>
+                </div>
                 <div class="col-lg-6">
-                    <img src="Assets/images/about1.jpg" alt="Projects Photo" class="img-fluid rounded">
+                    <p class="lead mb-4">
+                        Please fill out the form below to get in touch with us:
+                    </p>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required placeholder="Your Name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required placeholder="Phone Number" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required placeholder="Your Email" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="info" class="form-label">Information</label>
+                            <textarea class="form-control" id="info" rows="4" required placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
                 </div>
-                <div class="col-lg-6 text-lg-start text-start">
-                    <h2 class="section-title">Our Projects</h2>
-                    <p class="section-description">Our commitment to excellence doesn’t stop at offering top-tier
-                        digital marketing services. We are dedicated to bringing your unique ideas to life through our
-                        diverse range of projects. These projects are not just ordinary endeavors; they are
-                        transformative initiatives that harness the power of innovation, technology, and creativity to
-                        create a lasting impact.</p>
-                </div>
-            </div>
-            <div class="project-cards-wrapper">
-                <div class="project-cards">
-                    <!-- Project Cards -->
-                    <div class="card">
-                        <img src="Assets/images/project1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project One</h5>
-                            <p class="card-text">A brief description of Project One showcasing our capabilities in web
-                                development and design.</p>
+    
+                <!-- Google Map -->
+                <div class="col-lg-6 d-flex align-items-center mt-4 mt-lg-0">
+                    <div class="w-100">
+                        <h2 class="h4 mb-3 text-center">Find Us Here</h2>
+                        <div class="ratio ratio-16x9" style="height: 100%">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.2252643909696!2d-73.77859402458678!3d40.779061571383636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28a6c13cb01e3%3A0x2f594530ad3c0e63!2s2428%20Bell%20Blvd%2C%20Bayside%2C%20NY%2011360%2C%20USA!5e0!3m2!1sen!2s!4v1721740951299!5m2!1sen!2s"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <!-- Repeat for other projects -->
-                    <div class="card">
-                        <img src="Assets/images/project2.jpg" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Two</h5>
-                            <p class="card-text">Details about Project Two focusing on our innovative digital marketing
-                                solutions.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="Assets/images/project3.jpg" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Three</h5>
-                            <p class="card-text">Details about Project Three showcasing our capabilities in graphic
-                                design.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="Assets/images/project4.jpg" class="card-img-top" alt="Project 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Four</h5>
-                            <p class="card-text">An overview of Project Four, focusing on our expertise in social media
-                                marketing.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="Assets/images/project5.jpg" class="card-img-top" alt="Project 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Five</h5>
-                            <p class="card-text">Details about Project Five and our innovative digital solutions.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="Assets/images/project6.jpg" class="card-img-top" alt="Project 6">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Six</h5>
-                            <p class="card-text">An insight into Project Six, focusing on our comprehensive
-                                administrative support services.</p>
-                        </div>
-                    </div>
-                    <!-- Repeat for more projects -->
                 </div>
             </div>
         </div>
     </section>
-
     <footer class="footer py-4">
         <div class="container">
             <div class="row">
@@ -254,8 +232,6 @@
         // Open mailto link
         window.location.href = mailtoLink;
     });
-
-
 </script>
     
 </body>
