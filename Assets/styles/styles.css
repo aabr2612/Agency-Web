@@ -4,8 +4,8 @@
     --secondary-color: black; /* Blue text and highlights */
     --background-color: #f0f0f0; /* Slightly off-white background */
     --text-color: #000000; /* Black text */
-    --accent-color: #f8b682; /* Blue for accents */
-    --hover-color: #a6724b;
+    --accent-color: #f6d44c; /* Blue for accents */
+    --hover-color: #d8b628;
 }
 
 /* General Styling */
@@ -14,14 +14,14 @@ html {
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: rgba(0, 0, 0, 0.87);
     color: var(--text-color);
     margin: 0;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #f8b682;
+    background-color: rgba(0, 0, 0, 0.692);
     position: fixed; /* Fix the navbar to the top */
     width: 100%;
     z-index: 1000; /* Ensure it stays on top of other content */
@@ -41,7 +41,7 @@ body {
 
 .navbar-brand h5 {
     margin-left: 15px; /* Space between the logo and text */
-    color: var(--secondary-color); /* Ensure the text color is appropriate */
+    color: var(--accent-color); /* Ensure the text color is appropriate */
 }
 
 .navbar-toggler img {
@@ -53,7 +53,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: var(--text-color) !important;
+    color: var(--accent-color) !important;
     position: relative;
     padding-bottom: 5px;
     margin-left: 15px; /* Space between items */
