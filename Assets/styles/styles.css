@@ -149,7 +149,9 @@ body {
     color: var(--primary-color); /* White text color */
     max-width: 600px; /* Limit the width of the content box */
 }
-
+.highlight{
+    color: var(--accent-color);
+}
 .hero-box {
     background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
     padding: 40px;
@@ -528,26 +530,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Contact Section */
 .contact-us {
     background-color: var(--background-color);
@@ -595,7 +577,7 @@ body {
 /* Footer */
 /* Footer Styles */
 .footer {
-    background-color: var(--background-color);
+    background-color: rgba(0, 0, 0, 0.692);
     color: var(--text-color);
 }
 
