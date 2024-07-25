@@ -595,12 +595,12 @@ body {
 .footer-subtitle {
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    color: var(--accent-color);
+    color: white;
 }
 
 .footer-contact-info {
     margin-bottom: 1rem;
-    color: var(--accent-color);
+    color: white;
 }
 
 .footer-credit {
@@ -635,14 +635,16 @@ body {
     margin-bottom: 1rem;
 }
 .footer-contact-info {
-    color: var(--accent-color);
+    color: white;
 }
 
 .footer-contact-info a {
-    color: var(--accent-color); /* Color of the link */
+    color: white; /* Color of the link */
     text-decoration: none; /* Remove underline */
 }
-
+.contact-title{
+    color: var(--accent-color);
+}
 .footer-contact-info a:hover {
     color: var(--hover-color); /* Color of the link on hover */
     text-decoration: underline; /* Underline on hover */
