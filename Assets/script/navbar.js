@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const servicesDropdownToggle = document.getElementById('servicesDropdown');
   const dropdownMenu = document.querySelector('.navbar-nav .dropdown-menu');
   const navbarCollapse = document.getElementById('navbarNav');
-  
+
   servicesDropdownToggle.addEventListener('click', function(e) {
     e.preventDefault(); // Prevent default link behavior
     dropdownMenu.classList.toggle('show'); // Toggle dropdown
@@ -16,30 +16,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Function to collapse the navbar
-  function collapseNavbar() {
-    if (navbarCollapse.classList.contains('show')) {
-      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-        toggle: false
-      });
-      bsCollapse.hide();
-    }
-  }
-
-  // Close the dropdown and collapse the navbar when a dropdown item is selected
+  // Close the dropdown when an option is selected
   dropdownMenu.querySelectorAll('.dropdown-item').forEach(item => {
     item.addEventListener('click', function() {
       dropdownMenu.classList.remove('show');
-      collapseNavbar();
+      // Collapse the navbar
+      if (navbarCollapse.classList.contains('show')) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: false
+        });
+        bsCollapse.hide();
+      }
     });
   });
 
-  // Add event listeners to all main nav items except "What We Do"
+  // Add event listeners to all main nav items
   document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-    if (!link.closest('.nav-item').classList.contains('dropdown')) {
-      link.addEventListener('click', function() {
-        collapseNavbar();
-      });
-    }
+    link.addEventListener('click', function() {
+      if (navbarCollapse.classList.contains('show')) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: false
+        });
+        bsCollapse.hide();
+      }
+    });
   });
 });
