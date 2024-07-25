@@ -82,42 +82,27 @@ body {
     width: 100%;
 }
 
-.navbar-nav .dropdown:hover .dropdown-menu,
-.navbar-nav .dropdown-menu.show {
+.navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
 }
 
 .navbar-nav .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.692);
     display: none; /* Hide the dropdown menu by default */
-    position: absolute; /* Ensure it floats above other content */
-    top: 100%; /* Position it below the dropdown toggle */
-    right: 0; /* Align to the right of the parent element */
-    z-index: 1050; /* Ensure it appears above other content */
-    width: max-content; /* Adjust width to fit the longest item */
 }
 
 .navbar-nav .dropdown-item {
     color: var(--accent-color);
-    padding: 10px 20px; /* Add padding for better spacing */
-    font-size: 16px; /* Match the font size to your original */
-    text-align: center; /* Center the text */
-    display: block; /* Ensure the items cover the full width */
-    transition: background-color 0.3s; /* Transition effects */
-    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s;
 }
 
 .navbar-nav .dropdown-item:hover {
-    background-color: black; /* Background color on hover */
+    background-color: black;
 }
 
 /* Additional Styles */
 .navbar-nav .dropdown-toggle::after {
     display: none; /* Hide the default dropdown arrow */
-}
-
-.navbar-nav .dropdown-menu {
-    display: none; /* Hide dropdown by default */
 }
 
 

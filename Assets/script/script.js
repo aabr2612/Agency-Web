@@ -11,66 +11,36 @@ projectCardsWrapper.addEventListener("mousedown", (e) => {
   startX = e.pageX - projectCardsWrapper.offsetLeft;
   scrollLeft = projectCardsWrapper.scrollLeft;
 });
-
 projectCardsWrapper.addEventListener("mouseleave", () => {
   isDown = false;
   projectCardsWrapper.classList.remove("active");
 });
-
 projectCardsWrapper.addEventListener("mouseup", () => {
   isDown = false;
   projectCardsWrapper.classList.remove("active");
 });
-
 projectCardsWrapper.addEventListener("mousemove", (e) => {
   if (!isDown) return;
   e.preventDefault();
   const x = e.pageX - projectCardsWrapper.offsetLeft;
-  const walk = (x - startX) * 3; // Scroll faster
+  const walk = (x - startX) * 3; //scroll-fast
   projectCardsWrapper.scrollLeft = scrollLeft - walk;
 });
 
-// Handle contact form submission
-document.getElementById("contactForm").addEventListener("submit", function (event) {
-  event.preventDefault();
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  // Get form values
-  const name = document.getElementById("name").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const info = document.getElementById("info").value.trim();
+    // Get form values
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const info = document.getElementById("info").value;
 
-  // Validate form fields (optional)
-  if (!name || !phone || !email || !info) {
-    alert("Please fill in all fields.");
-    return;
-  }
+    // Create mailto link
+    const mailtoLink = `mailto:Sifra@xcelldigitalservices.com?subject=Contact from ${name}&body=Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AMessage: ${info}`;
 
-  // Create mailto link
-  const mailtoLink = `mailto:Sifra@xcelldigitalservices.com?subject=Contact from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(info)}`;
-
-  // Open mailto link
-  window.location.href = mailtoLink;
-});
-
-// Dropdown toggle functionality
-document.addEventListener('DOMContentLoaded', function() {
-  const servicesDropdownToggle = document.getElementById('servicesDropdown');
-  const dropdownMenu = document.querySelector('.navbar-nav .dropdown-menu');
-
-  servicesDropdownToggle.addEventListener('click', function(e) {
-    e.preventDefault(); // Prevent default link behavior
-    if (dropdownMenu.classList.contains('show')) {
-      dropdownMenu.classList.remove('show'); // Hide dropdown
-    } else {
-      dropdownMenu.classList.add('show'); // Show dropdown
-    }
+    // Open mailto link
+    window.location.href = mailtoLink;
   });
-
-  // Close the dropdown when clicking outside of it
-  document.addEventListener('click', function(e) {
-    if (!dropdownMenu.contains(e.target) && !servicesDropdownToggle.contains(e.target)) {
-      dropdownMenu.classList.remove('show'); // Hide dropdown
-    }
-  });
-});
