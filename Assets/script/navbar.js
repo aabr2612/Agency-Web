@@ -16,29 +16,37 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Close the dropdown when an option is selected
+  // Function to collapse the navbar
+  function collapseNavbar() {
+    if (navbarCollapse.classList.contains('show')) {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false
+      });
+      bsCollapse.hide();
+    }
+  }
+
+  // Handle clicks on the dropdown items
   dropdownMenu.querySelectorAll('.dropdown-item').forEach(item => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function(e) {
+      // Allow navigation
+      window.location.href = e.currentTarget.href;
+      
+      // Close dropdown and collapse navbar
       dropdownMenu.classList.remove('show');
-      // Collapse the navbar
-      if (navbarCollapse.classList.contains('show')) {
-        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-          toggle: false
-        });
-        bsCollapse.hide();
-      }
+      collapseNavbar();
+      
+      // Prevent the default action (if needed)
+      e.preventDefault();
     });
   });
 
-  // Add event listeners to all main nav items
+  // Handle clicks on all main nav items except "What We Do"
   document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-    link.addEventListener('click', function() {
-      if (navbarCollapse.classList.contains('show')) {
-        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-          toggle: false
-        });
-        bsCollapse.hide();
-      }
-    });
+    if (!link.closest('.nav-item').classList.contains('dropdown')) {
+      link.addEventListener('click', function() {
+        collapseNavbar();
+      });
+    }
   });
 });
