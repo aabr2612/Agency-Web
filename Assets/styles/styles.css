@@ -81,17 +81,17 @@ body {
 }
 
 .navbar-nav .dropdown-menu {
-    background-color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.692);
     display: none; /* Hide the dropdown menu by default */
 }
 
 .navbar-nav .dropdown-item {
-    color: var(--text-color);
+    color: var(--accent-color);
     transition: background-color 0.3s;
 }
 
 .navbar-nav .dropdown-item:hover {
-    background-color: var(--background-color);
+    background-color: black;
 }
 
 /* Additional Styles */
