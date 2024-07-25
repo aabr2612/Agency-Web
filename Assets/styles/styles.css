@@ -131,7 +131,7 @@ body {
     text-align: left; /* Align text to the left within the box */
     overflow: hidden;
     padding: 0 20px; /* Add some padding to the sides */
-    margin-top: 56px; /* Adjust margin-top to match the height of the fixed navbar */
+    margin-top: 65px; /* Adjust margin-top to match the height of the fixed navbar */
 }
 
 .hero-bg-img {
@@ -372,16 +372,10 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 /* projects section */
+#projects{
+    margin-top: 65px;
+}
 .projects-section {
     background-color: var(--background-color);
 }
@@ -455,6 +449,9 @@ body {
 
 
 /* Blogs section *//* Blog Section Styles */
+#blogs{
+    margin-top: 65px;
+}
 .blogs-section {
     background-color: var(--background-color);
     padding: 2rem 0;
@@ -531,6 +528,9 @@ body {
 
 
 /* Contact Section */
+#contactus{
+    margin-top: 65px;
+}
 .contact-us {
     background-color: var(--background-color);
     padding: 5rem 0;
