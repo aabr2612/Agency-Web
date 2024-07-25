@@ -18,6 +18,7 @@ body {
     color: var(--text-color);
     margin: 0;
 }
+
 /* Navbar */
 .navbar {
     background-color: rgba(0, 0, 0, 0.692);
@@ -103,6 +104,7 @@ body {
 .navbar-nav .dropdown-toggle::after {
     display: none; /* Hide the default dropdown arrow */
 }
+
 
 
 
@@ -593,9 +595,13 @@ body {
 .footer-subtitle {
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    color: white;
+    color: var(--accent-color);
 }
 
+.footer-contact-info {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
 
 .footer-credit {
     font-size: 1rem;
@@ -629,13 +635,11 @@ body {
     margin-bottom: 1rem;
 }
 .footer-contact-info {
-    color: white;
-}
-.contact-title{
     color: var(--accent-color);
 }
+
 .footer-contact-info a {
-    color: white; /* Color of the link */
+    color: var(--accent-color); /* Color of the link */
     text-decoration: none; /* Remove underline */
 }
 
@@ -658,7 +662,7 @@ body {
 
 .footer-services a,
 .footer-links a {
-    color: white;
+    color: var(--accent-color);
     text-decoration: none;
 }
 
