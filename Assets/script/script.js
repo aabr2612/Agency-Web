@@ -11,36 +11,69 @@ projectCardsWrapper.addEventListener("mousedown", (e) => {
   startX = e.pageX - projectCardsWrapper.offsetLeft;
   scrollLeft = projectCardsWrapper.scrollLeft;
 });
+
 projectCardsWrapper.addEventListener("mouseleave", () => {
   isDown = false;
   projectCardsWrapper.classList.remove("active");
 });
+
 projectCardsWrapper.addEventListener("mouseup", () => {
   isDown = false;
   projectCardsWrapper.classList.remove("active");
 });
+
 projectCardsWrapper.addEventListener("mousemove", (e) => {
   if (!isDown) return;
   e.preventDefault();
   const x = e.pageX - projectCardsWrapper.offsetLeft;
-  const walk = (x - startX) * 3; //scroll-fast
+  const walk = (x - startX) * 3; // Scroll faster
   projectCardsWrapper.scrollLeft = scrollLeft - walk;
 });
 
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+// Handle contact form submission
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    // Get form values
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const email = document.getElementById("email").value;
-    const info = document.getElementById("info").value;
+  // Get form values
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const info = document.getElementById("info").value.trim();
 
-    // Create mailto link
-    const mailtoLink = `mailto:Sifra@xcelldigitalservices.com?subject=Contact from ${name}&body=Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AMessage: ${info}`;
+  // Validate form fields (optional)
+  if (!name || !phone || !email || !info) {
+    alert("Please fill in all fields.");
+    return;
+  }
 
-    // Open mailto link
-    window.location.href = mailtoLink;
+  // Create mailto link
+  const mailtoLink = `mailto:Sifra@xcelldigitalservices.com?subject=Contact from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(info)}`;
+
+  // Open mailto link
+  window.location.href = mailtoLink;
+});
+
+// Dropdown toggle functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const servicesDropdownToggle = document.getElementById('servicesDropdown');
+  const dropdownMenu = document.querySelector('.navbar-nav .dropdown-menu');
+
+  servicesDropdownToggle.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default link behavior
+    dropdownMenu.classList.toggle('show'); // Toggle dropdown
   });
+
+  // Close the dropdown when clicking outside of it
+  document.addEventListener('click', function(e) {
+    if (!dropdownMenu.contains(e.target) && !servicesDropdownToggle.contains(e.target)) {
+      dropdownMenu.classList.remove('show'); // Hide dropdown
+    }
+  });
+
+  // Close the dropdown when an option is selected
+  dropdownMenu.querySelectorAll('.dropdown-item').forEach(item => {
+    item.addEventListener('click', function() {
+      dropdownMenu.classList.remove('show');
+    });
+  });
+});
