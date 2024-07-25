@@ -574,11 +574,10 @@ body {
     }
 }
 
-/* Footer */
 /* Footer Styles */
 .footer {
     background-color: rgba(0, 0, 0, 0.692);
-    color: var(--text-color);
+    color: var(--accent-color);
 }
 
 .footer-title {
@@ -586,14 +585,21 @@ body {
     font-weight: bold;
     color: var(--accent-color);
 }
-.footer-heading-items{
-    color: var(--accent-color);
-    
-}
 
 .footer-subtitle {
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.footer-contact-info {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.footer-credit {
+    font-size: 1rem;
+    color: var(--accent-color);
 }
 
 .social-icons {
@@ -609,6 +615,7 @@ body {
     height: 30px;
 }
 
+/* Additional styles for alignment and layout */
 .footer-left {
     text-align: left;
 }
@@ -621,59 +628,46 @@ body {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+.footer-contact-info {
+    color: var(--accent-color);
+}
 
-.footer-services, .footer-links {
+.footer-contact-info a {
+    color: var(--accent-color); /* Color of the link */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-contact-info a:hover {
+    color: var(--hover-color); /* Color of the link on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+.footer-services,
+.footer-links {
     list-style: none;
     padding: 0;
 }
 
-.footer-services li, .footer-links li {
+.footer-services li,
+.footer-links li {
     margin-bottom: 0.5rem;
 }
 
-.footer-services a, .footer-links a {
-    color: var(--text-color);
+.footer-services a,
+.footer-links a {
+    color: var(--accent-color);
     text-decoration: none;
 }
 
-.footer-services a:hover, .footer-links a:hover {
+.footer-services a:hover,
+.footer-links a:hover {
     text-decoration: underline;
 }
 
-.footer-privacy, .footer-credit {
+.footer-privacy,
+.footer-credit {
     margin-top: 1rem;
     font-size: 1rem;
-    color: var(--text-color);
-}
-.pricing-section {
-    background-color: var(--primary-color);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-.pricing-section h1,
-.pricing-section h2,
-.pricing-section h3,
-.pricing-section h4,
-.pricing-section h5 {
-    color: var(--secondary-color);
-}
-
-.pricing-section p,
-.pricing-section ul li {
-    color: var(--text-color);
-}
-
-.pricing-section .list-unstyled li {
-    margin-bottom: 0.5rem;
-}
-
-.pricing-section .btn-primary {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
-.pricing-section .btn-primary:hover {
-    background-color: var(--hover-color);
-    border-color: var(--hover-color);
+    color: var(--accent-color);
 }
