@@ -574,6 +574,88 @@ body {
     aspect-ratio: 16/9; /* Ensure aspect ratio */
 }
 
+
+
+
+/* Pricing section */
+#pricing {
+    margin-top: 65px;
+}
+
+.pricing-section {
+    background-color: var(--background-color);
+}
+
+.pricing-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.pricing-section .section-description {
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.pricing-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pricing-section .col-lg-4,
+.pricing-section .col-md-6 {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-section .col-lg-12 {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-section .card {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+.pricing-section .card {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.pricing-section .card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.pricing-section .card .card-text {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.pricing-section .card h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-top: 1rem;
+}
+
+.pricing-section .card ul {
+    padding-left: 20px;
+}
+
+.pricing-section .card ul li {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+
+
+
+
 @media (max-width: 768px) {
     .contact-us h1 {
         font-size: 2rem;
