@@ -39,7 +39,7 @@ document
     const info = document.getElementById("info").value;
 
     // Create mailto link
-    const mailtoLink = `mailto:Sifra@xcelldigitalservices.com?subject=Contact from ${name}&body=Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AMessage: ${info}`;
+    const mailtoLink = `mailto:aabr2612@gmail.com?subject=Contact from ${name}&body=Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AMessage: ${info}`;
 
     // Open mailto link
     window.location.href = mailtoLink;
