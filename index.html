@@ -12,6 +12,14 @@
   </head>
 
   <body>
+    <Loading>
+      <div id="loadingScreen">
+        <div class="loader">
+          <img src="Assets/images/XCELL.svg" alt="Company Logo" class="logo" />
+          <div class="percentage" id="loadingPercentage">0%</div>
+        </div>
+      </div>
+    </Loading>
     <!-- Header Starts -->
     <header>
       <nav class="navbar navbar-expand-lg fixed-top">
@@ -520,7 +528,6 @@
 
         <!-- Contact Information -->
         <div class="row align-items-center">
-
           <!-- Email -->
           <div class="col-md-6 text-center">
             <p class="footer-contact-info">
@@ -605,6 +612,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="Assets/script/script.js"></script>
+    <script src="Assets/script/loading.js"></script>
     <script src="Assets/script/navbar.js"></script>
   </body>
 </html>
