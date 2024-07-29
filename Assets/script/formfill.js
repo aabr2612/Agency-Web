@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // Create mailto link
-      const mailtoLink = `mailto:Sifra@xcelldigitalservices.com?subject=Contact from ${name}&body=Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AService: ${service.value}%0AMessage: ${info}`;
+      const mailtoLink = `mailto:sifra@xcelldigiservices.com?subject=Contact from ${name}&body=Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AService: ${service.value}%0AMessage: ${info}`;
 
       // Open mailto link
       window.location.href = mailtoLink;
