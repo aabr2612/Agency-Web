@@ -1,10 +1,15 @@
 /* Root Variables */
 :root {
-    --primary-color: #ffffff; /* White background */
-    --secondary-color: black; /* Blue text and highlights */
-    --background-color: #f0f0f0; /* Slightly off-white background */
-    --text-color: #000000; /* Black text */
-    --accent-color: #f6d44c; /* Blue for accents */
+    --primary-color: #ffffff;
+    /* White background */
+    --secondary-color: black;
+    /* Blue text and highlights */
+    --background-color: #f0f0f0;
+    /* Slightly off-white background */
+    --text-color: #000000;
+    /* Black text */
+    --accent-color: #f6d44c;
+    /* Blue for accents */
     --hover-color: #d8b628;
 }
 
@@ -64,93 +69,109 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.692);
-  position: fixed; /* Fix the navbar to the top */
-  width: 100%;
-  z-index: 1000; /* Ensure it stays on top of other content */
-  top: 0;
-  left: 0;
-  border-bottom: 1px solid #ddd; /* Optional: add a border for separation */
+    background-color: rgba(0, 0, 0, 0.692);
+    position: fixed;
+    /* Fix the navbar to the top */
+    width: 100%;
+    z-index: 1000;
+    /* Ensure it stays on top of other content */
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ddd;
+    /* Optional: add a border for separation */
 }
 
 .navbar-brand {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-brand img {
-  height: 40px; /* Adjust the height of the brand logo */
+    height: 40px;
+    /* Adjust the height of the brand logo */
 }
 
 .navbar-brand h5 {
-  margin-left: 15px; /* Space between the logo and text */
-  color: var(--accent-color); /* Ensure the text color is appropriate */
+    margin-left: 15px;
+    /* Space between the logo and text */
+    color: var(--accent-color);
+    /* Ensure the text color is appropriate */
 }
 
 .navbar-toggler {
-  background-color: var(--accent-color); /* Permanent accent color background */
-  border: none; /* Remove border */
-  transition: background-color 0.3s; /* Smooth transition for background color */
+    background-color: var(--accent-color);
+    /* Permanent accent color background */
+    border: none;
+    /* Remove border */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color */
 }
 
 .navbar-toggler img {
-  width: 24px; /* Adjust the width of the toggler icon */
+    width: 24px;
+    /* Adjust the width of the toggler icon */
 }
 
 .navbar-nav {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 .navbar-nav .nav-link {
-  color: var(--accent-color) !important;
-  position: relative;
-  padding: 3px;
-  margin: 0 15px;
-  transition: color 0.3s, background-color 0.3s, text-decoration 0.3s;
-  border-radius: 5px;
+    color: var(--accent-color) !important;
+    position: relative;
+    padding: 3px;
+    margin: 0 15px;
+    transition: color 0.3s, background-color 0.3s, text-decoration 0.3s;
+    border-radius: 5px;
 }
 
 .navbar-nav .nav-link:hover {
-  font-weight: bold;
-  color: black !important;
-  background-color: var(--accent-color);
+    font-weight: bold;
+    color: black !important;
+    background-color: var(--accent-color);
 }
 
 .navbar-nav .nav-link:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 .navbar-nav .nav-link.active {
-  color: black !important;
-  background-color: var(--accent-color);
+    color: black !important;
+    background-color: var(--accent-color);
 }
 
 .navbar-nav .dropdown:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 
 .navbar-nav .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.692);
-  display: none; /* Hide the dropdown menu by default */
-  text-align: left; /* Ensure left alignment of content */
-  width: auto; /* Automatically size the dropdown */
-  min-width: 100%; /* Ensure it takes at least the width of the dropdown toggle */
+    background-color: rgba(0, 0, 0, 0.692);
+    display: none;
+    /* Hide the dropdown menu by default */
+    text-align: left;
+    /* Ensure left alignment of content */
+    width: auto;
+    /* Automatically size the dropdown */
+    min-width: 100%;
+    /* Ensure it takes at least the width of the dropdown toggle */
 }
 
 .navbar-nav .dropdown-item {
-  color: var(--accent-color);
-  transition: background-color 0.3s;
-  white-space: nowrap; /* Prevent text wrapping */
+    color: var(--accent-color);
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    /* Prevent text wrapping */
 }
 
 .navbar-nav .dropdown-item:hover {
-  font-weight: bold;
-  background-color: black;
+    font-weight: bold;
+    background-color: black;
 }
 
 /* Additional Styles */
 .navbar-nav .dropdown-toggle::after {
-  display: none; /* Hide the default dropdown arrow */
+    display: none;
+    /* Hide the default dropdown arrow */
 }
 
 
@@ -184,11 +205,15 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align the content to the left */
-    text-align: left; /* Align text to the left within the box */
+    justify-content: flex-start;
+    /* Align the content to the left */
+    text-align: left;
+    /* Align text to the left within the box */
     overflow: hidden;
-    padding: 0 20px; /* Add some padding to the sides */
-    margin-top: 65px; /* Adjust margin-top to match the height of the fixed navbar */
+    padding: 0 20px;
+    /* Add some padding to the sides */
+    margin-top: 65px;
+    /* Adjust margin-top to match the height of the fixed navbar */
 }
 
 .hero-bg-img {
@@ -203,41 +228,56 @@ body {
 
 .hero-content {
     position: relative;
-    color: var(--primary-color); /* White text color */
-    max-width: 600px; /* Limit the width of the content box */
+    color: var(--primary-color);
+    /* White text color */
+    max-width: 600px;
+    /* Limit the width of the content box */
 }
-.highlight{
+
+.highlight {
     color: var(--accent-color);
 }
+
 .hero-box {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black background */
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    max-width: 600px; /* Limit the width of the content box */
-    width: 100%; /* Ensure the box takes full width within the container */
+    max-width: 600px;
+    /* Limit the width of the content box */
+    width: 100%;
+    /* Ensure the box takes full width within the container */
 }
 
 .hero h1 {
-    font-size: 3rem; /* Larger font size for emphasis */
+    font-size: 3rem;
+    /* Larger font size for emphasis */
     margin-bottom: 20px;
-    font-weight: bold; /* Make the text bold */
+    font-weight: bold;
+    /* Make the text bold */
 }
 
 .hero p {
-    font-size: 1.25rem; /* Adjust size for readability */
+    font-size: 1.25rem;
+    /* Adjust size for readability */
     margin-bottom: 30px;
 }
 
 .hero-box h1 {
-    color: var(--primary-color); /* White color for 'XCELL' */
-    margin: 0; /* Remove default margin */
-    font-size: 3rem; /* Adjust the size as needed */
+    color: var(--primary-color);
+    /* White color for 'XCELL' */
+    margin: 0;
+    /* Remove default margin */
+    font-size: 3rem;
+    /* Adjust the size as needed */
 }
 
 .hero-box p {
-    color: var(--primary-color); /* White text color for the paragraph */
-    margin-top: 10px; /* Space between the title and paragraph */
+    color: var(--primary-color);
+    /* White text color for the paragraph */
+    margin-top: 10px;
+    /* Space between the title and paragraph */
 }
 
 /* About Us Section */
@@ -249,7 +289,8 @@ body {
 .section-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: var(--text-color); /* Black color for headings */
+    color: var(--text-color);
+    /* Black color for headings */
     margin-bottom: 1.5rem;
 }
 
@@ -270,7 +311,8 @@ body {
 .img-fluid {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Rounded corners for the image */
+    border-radius: 8px;
+    /* Rounded corners for the image */
 }
 
 @media (max-width: 768px) {
@@ -302,7 +344,19 @@ body {
 
 
 
+#reviews{
+    background: var(--background-color);
+}
+#reviewCarousel {
+    width: 60%;
+    margin: 0 auto;
+    /* Center the carousel */
+}
 
+.carousel-inner img {
+    object-fit: cover;
+    /* Ensure images cover the space without distortion */
+}
 
 
 
@@ -339,9 +393,11 @@ body {
 }
 
 .card {
-    border-radius: 8px; /* Rounded corners for the card */
+    border-radius: 8px;
+    /* Rounded corners for the card */
     overflow: hidden;
-    background-color: var(--primary-color); /* White background for the card */
+    background-color: var(--primary-color);
+    /* White background for the card */
 }
 
 .card-body {
@@ -351,17 +407,20 @@ body {
 .card-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--text-color); /* Blue color for titles */
+    color: var(--text-color);
+    /* Blue color for titles */
     margin-bottom: 1rem;
 }
 
 .card-text {
     font-size: 1rem;
-    color: var(--text-color); /* Black text color for descriptions */
+    color: var(--text-color);
+    /* Black text color for descriptions */
 }
 
 .card.shadow-sm {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for cards */
 }
 
 @media (max-width: 768px) {
@@ -405,7 +464,8 @@ body {
 .service-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem; /* Space between cards */
+    gap: 1.5rem;
+    /* Space between cards */
 }
 
 /* Service Card */
@@ -415,10 +475,13 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    flex: 1 1 calc(33.333% - 1.5rem); /* Three cards per row with spacing */
-    min-height: 400px; /* Fixed height for consistency */
+    flex: 1 1 calc(33.333% - 1.5rem);
+    /* Three cards per row with spacing */
+    min-height: 400px;
+    /* Fixed height for consistency */
     display: flex;
-    flex-direction: column; /* Aligns content vertically */
+    flex-direction: column;
+    /* Aligns content vertically */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -429,13 +492,16 @@ body {
 
 .service-card-img {
     width: 100%;
-    height: 200px; /* Fixed height for images */
-    object-fit: cover; /* Ensure images cover the area without distortion */
+    height: 200px;
+    /* Fixed height for images */
+    object-fit: cover;
+    /* Ensure images cover the area without distortion */
 }
 
 .service-card-body {
     padding: 1.5rem;
-    flex: 1; /* Allows the body to grow and fill available space */
+    flex: 1;
+    /* Allows the body to grow and fill available space */
 }
 
 .service-title {
@@ -483,9 +549,10 @@ body {
 
 
 /* projects section */
-#projects{
+#projects {
     margin-top: 65px;
 }
+
 .projects-section {
     background-color: var(--background-color);
 }
@@ -539,12 +606,14 @@ body {
     background-color: var(--primary-color);
     border: none;
 }
-.card-btn{
+
+.card-btn {
     background-color: var(--accent-color);
     border: none;
     transition: background-color 0.3s, box-shadow 0.3s;
 
 }
+
 .projects-section .btn-primary:hover {
     background-color: var(--primary-color-dark);
 }
@@ -558,10 +627,12 @@ body {
 
 
 
-/* Blogs section *//* Blog Section Styles */
-#blogs{
+/* Blogs section */
+/* Blog Section Styles */
+#blogs {
     margin-top: 65px;
 }
+
 .blogs-section {
     background-color: var(--background-color);
     padding: 2rem 0;
@@ -569,7 +640,7 @@ body {
 
 .blogs-section .section-title {
     font-size: 2rem;
-    color:var(--accent-color);
+    color: var(--accent-color);
     margin-bottom: 1rem;
 }
 
@@ -590,8 +661,10 @@ body {
 
 .blogs-section .card-img-top {
     width: 100%;
-    height: 200px; /* Set a fixed height for the image */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
+    height: 200px;
+    /* Set a fixed height for the image */
+    object-fit: cover;
+    /* Ensure the image covers the area without distortion */
 }
 
 .blogs-section .card-body {
@@ -684,7 +757,8 @@ body {
 }
 
 .contact-us .form-control {
-    border-radius: 0.375rem; /* Rounded corners */
+    border-radius: 0.375rem;
+    /* Rounded corners */
     border-color: #ddd;
     background-color: #fff;
 }
@@ -701,7 +775,8 @@ body {
 }
 
 .contact-us .ratio {
-    aspect-ratio: 16/9; /* Ensure aspect ratio */
+    aspect-ratio: 16/9;
+    /* Ensure aspect ratio */
 }
 
 /* Custom styles for service buttons */
@@ -792,6 +867,7 @@ body {
     max-width: 500px;
     margin: auto;
 }
+
 .pricing-section .card {
     width: 100%;
     max-width: 500px;
@@ -890,20 +966,27 @@ body {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+
 .footer-contact-info {
     color: white;
 }
 
 .footer-contact-info a {
-    color: white; /* Color of the link */
-    text-decoration: none; /* Remove underline */
+    color: white;
+    /* Color of the link */
+    text-decoration: none;
+    /* Remove underline */
 }
-.contact-title{
+
+.contact-title {
     color: var(--accent-color);
 }
+
 .footer-contact-info a:hover {
-    color: var(--hover-color); /* Color of the link on hover */
-    text-decoration: underline; /* Underline on hover */
+    color: var(--hover-color);
+    /* Color of the link on hover */
+    text-decoration: underline;
+    /* Underline on hover */
 }
 
 
