@@ -161,69 +161,206 @@
                 <strong>Contact Us</strong>
               </h1>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-12 mx-auto">
               <p class="lead mb-4">
                 Please fill out the form below to get in touch with us:
               </p>
-              <form id="contactForm">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    required
-                    placeholder="Your Name"
-                  />
+              <div class="row">
+                <div class="col-lg-6">
+                  <form id="contactForm" action="send_email.php" method="post">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        required
+                        placeholder="Your Name"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        required
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="Your Email"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="info" class="form-label">Information</label>
+                      <textarea
+                        class="form-control"
+                        id="info"
+                        name="info"
+                        rows="4"
+                        required
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary rounded-pill">
+                      Send
+                    </button>
+                  </form>
                 </div>
-                <div class="mb-3">
-                  <label for="phone" class="form-label">Phone Number</label>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="phone"
-                    required
-                    placeholder="Phone Number"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    required
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="info" class="form-label">Information</label>
-                  <textarea
-                    class="form-control"
-                    id="info"
-                    rows="4"
-                    required
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-              </form>
-            </div>
-
-            <!-- Google Map -->
-            <div class="col-lg-6 d-flex align-items-center mt-4 mt-lg-0">
-              <div class="w-100">
-                <h2 class="h4 mb-3 text-center">Find Us Here</h2>
-                <div class="ratio ratio-16x9" style="height: 100%">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.2252643909696!2d-73.77859402458678!3d40.779061571383636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28a6c13cb01e3%3A0x2f594530ad3c0e63!2s2428%20Bell%20Blvd%2C%20Bayside%2C%20NY%2011360%2C%20USA!5e0!3m2!1sen!2s!4v1721740951299!5m2!1sen!2s"
-                    width="600"
-                    height="450"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                <div class="col-lg-6">
+                  <label class="form-label">Service</label>
+                  <div
+                    class="btn-group btn-group-toggle d-flex flex-wrap"
+                    data-toggle="buttons"
+                  >
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="Digital Marketing"
+                        required
+                      />
+                      Digital Marketing
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="Social Media Marketing"
+                      />
+                      Social Media Marketing
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="Virtual Assistance"
+                      />
+                      Virtual Assistance
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="Graphic Designing"
+                      />
+                      Graphic Designing
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="A to Z Ecommerce Management"
+                      />
+                      A to Z Ecommerce Management
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="HR Management"
+                      />
+                      HR Management
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="Microsoft Word & Office"
+                      />
+                      Microsoft Word & Office
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="Urgent Data Entry"
+                      />
+                      Urgent Data Entry
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="Content Writing"
+                      />
+                      Content Writing
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="Resume Design"
+                      />
+                      Resume Design
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input type="radio" name="service" value="Web Research" />
+                      Web Research
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="Editing & Proofreading"
+                      />
+                      Editing & Proofreading
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="List Building"
+                      />
+                      List Building
+                    </label>
+                    <label
+                      class="btn btn-outline-primary rounded-pill m-1 flex-fill"
+                    >
+                      <input
+                        type="radio"
+                        name="service"
+                        value="All kinds of Administrative tasks"
+                      />
+                      All kinds of Administrative tasks
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -344,7 +481,7 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
-    <script src="Assets/script/script.js"></script>
+    <script src="Assets/script/formfill.js"></script>
     <script src="Assets/script/navbar.js"></script>
   </body>
 </html>

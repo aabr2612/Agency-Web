@@ -597,7 +597,6 @@ body {
 
 
 
-
 /* Contact Section */
 #contactus{
     margin-top: 65px;
@@ -638,6 +637,30 @@ body {
 .contact-us .ratio {
     aspect-ratio: 16/9; /* Ensure aspect ratio */
 }
+
+/* Custom styles for service buttons */
+.btn-outline-primary {
+    color: black;
+    border-color: #f4d66c;
+    background-color: white;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-outline-primary:hover {
+    color: black;
+    background-color: #f4d66c;
+    border-color: black;
+}
+
+.btn-outline-primary.active,
+.btn-outline-primary.active:hover,
+.btn-outline-primary:checked,
+.btn-outline-primary:checked:hover {
+    color: black;
+    background-color: #f4d66c;
+    border-color: black;
+}
+
 
 
 
