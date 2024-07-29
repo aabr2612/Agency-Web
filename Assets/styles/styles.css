@@ -597,10 +597,37 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Contact Section */
-#contactus{
+#contactus {
     margin-top: 65px;
 }
+
 .contact-us {
     background-color: var(--background-color);
     padding: 5rem 0;
@@ -652,14 +679,34 @@ body {
     border-color: black;
 }
 
+/* Active and checked state styles */
 .btn-outline-primary.active,
-.btn-outline-primary.active:hover,
 .btn-outline-primary:checked,
+.btn-outline-primary.active:hover,
 .btn-outline-primary:checked:hover {
     color: black;
     background-color: #f4d66c;
     border-color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
