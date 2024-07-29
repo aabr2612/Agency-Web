@@ -42,12 +42,12 @@ body {
 }
 
 .logo {
-    width: 150px;
+    width: 120px;
     margin-bottom: 20px;
 }
 
 .percentage {
-    font-size: 2rem;
+    font-size: 1rem;
     color: #f4d66c;
 }
 

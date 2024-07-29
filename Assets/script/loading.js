@@ -10,8 +10,11 @@ document.addEventListener('DOMContentLoaded', function () {
             loadingPercentage.textContent = percentage + '%';
             setTimeout(updatePercentage, 30); // Adjust the interval for the desired speed
         } else {
-            loadingScreen.style.display = 'none';
-            content.style.display = 'block';
+            // Wait 1 second before hiding the loading screen
+            setTimeout(() => {
+                loadingScreen.style.display = 'none';
+                content.style.display = 'block';
+            }, 200); // 1 second delay
         }
     }
 
