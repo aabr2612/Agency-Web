@@ -345,7 +345,7 @@ body {
 
 
 #reviews{
-    background: var(--background-color);
+    background: var(--accent-color);
 }
 #reviewCarousel {
     width: 60%;
