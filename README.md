@@ -64,9 +64,4 @@ This project is licensed under the MIT License.
 <footer>
 <p>&copy; 2024 XCELL Digital Solutions. All rights reserved.</p>
 <p>Contact: <a href="mailto:aabr2612@gmail.com">aabr2612@gmail.com</a></p>
-<p>Follow us on:
-    <a href="https://facebook.com/yourprofile">Facebook</a>,
-    <a href="https://twitter.com/yourprofile">Twitter</a>,
-    <a href="https://instagram.com/yourprofile">Instagram</a>
-</p>
 </footer>
