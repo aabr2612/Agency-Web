@@ -62,7 +62,7 @@ Open the `index.html` file in your browser to view the website locally.
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 <footer>
-<p>&copy; 2024 Your Website Name. All rights reserved.</p>
+<p>&copy; 2024 XCELL Digital Solutions. All rights reserved.</p>
 <p>Contact: <a href="mailto:aabr2612@gmail.com">aabr2612@gmail.com</a></p>
 <p>Follow us on:
     <a href="https://facebook.com/yourprofile">Facebook</a>,
