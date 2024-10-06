@@ -59,7 +59,7 @@ Clone the repository:
 Open the `index.html` file in your browser to view the website locally.
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+This project is licensed under the MIT License.
 
 <footer>
 <p>&copy; 2024 XCELL Digital Solutions. All rights reserved.</p>
