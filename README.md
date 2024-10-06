@@ -1,4 +1,4 @@
-# Website Overview
+# XCELL Digital Services
 
 This repository contains the code for a multi-page website built using HTML, CSS, Bootstrap, and JavaScript. The website features a smooth user interface with multiple sections such as Home, About, Services, Projects, Blog, Reviews, and Contact Us.
 
@@ -23,7 +23,7 @@ This repository contains the code for a multi-page website built using HTML, CSS
 - **Black and Yellow Theme**: The website follows a modern black and yellow theme, enhancing visual appeal and readability.
 - **Interactive Header and Footer**:
   - **Header**: Includes navigation links for easy access to different sections such as Home, About, Services, Projects, Blog, and Contact Us.
-  - **Footer**: Displays contact information, social media links (Facebook, Twitter, Instagram, etc.), and quick access to important sections.
+  - **Footer**: Displays contact information, social media links (Facebook, Instagram, Whatsapp, Email etc.), and quick access to important sections.
 - **Get Started Feature**: When the "Get Started" button is clicked, a form appears that allows users to select the services they wish to receive.
 
 ## Technologies Used
@@ -55,3 +55,18 @@ This repository contains the code for a multi-page website built using HTML, CSS
 
 ## How to Run
 Clone the repository:
+      git clone https://github.com/aabr2612/Agency-Web.git
+Open the `index.html` file in your browser to view the website locally.
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+<footer>
+<p>&copy; 2024 Your Website Name. All rights reserved.</p>
+<p>Contact: <a href="mailto:aabr2612@gmail.com">aabr2612@gmail.com</a></p>
+<p>Follow us on:
+    <a href="https://facebook.com/yourprofile">Facebook</a>,
+    <a href="https://twitter.com/yourprofile">Twitter</a>,
+    <a href="https://instagram.com/yourprofile">Instagram</a>
+</p>
+</footer>
